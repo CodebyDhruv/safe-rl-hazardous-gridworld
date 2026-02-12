@@ -449,14 +449,6 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## 📧 Contact
-
-**Your Name** - [@yourhandle](https://twitter.com/yourhandle) - email@example.com
-
-Project Link: [https://github.com/yourusername/safe-rl-gridworld](https://github.com/yourusername/safe-rl-gridworld)
-
----
-
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
