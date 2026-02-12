@@ -1,0 +1,31 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Compiled extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# PyInstaller
+*.spec
+
+# Logs
+*.log
+
+# Virtual environment
+myenv/
+venv/
+.env/
+
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

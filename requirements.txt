@@ -1,0 +1,4 @@
+minigrid 
+gymnasium 
+numpy 
+matplotlib
