@@ -1,0 +1,30 @@
+{
+  "metrics": {
+    "q_learning": {
+      "reward": 0.6533980468749999,
+      "violations": 0.284
+    },
+    "sarsa": {
+      "reward": 0.657140390625,
+      "violations": 0.84
+    },
+    "lagrangian_fixed": {
+      "reward": 0.6606651562499999,
+      "violations": 0.004
+    },
+    "lagrangian_adaptive": {
+      "reward": 0.65300640625,
+      "violations": 0.0
+    },
+    "shielded": {
+      "reward": 0.6654518749999998,
+      "violations": 0.0
+    }
+  },
+  "best_safe": "shielded",
+  "best_unsafe": "shielded",
+  "thresholds": {
+    "strict": 0.5,
+    "moderate": 3.0
+  }
+}

@@ -1,0 +1,234 @@
+[
+  {
+    "x": 1,
+    "y": 1,
+    "dir": 0,
+    "action": -1,
+    "reward": 0,
+    "violation": 0
+  },
+  {
+    "x": 2,
+    "y": 1,
+    "dir": 0,
+    "action": 2,
+    "reward": -0.01,
+    "violation": 0
+  },
+  {
+    "x": 3,
+    "y": 1,
+    "dir": 0,
+    "action": 2,
+    "reward": -0.01,
+    "violation": 0
+  },
+  {
+    "x": 4,
+    "y": 1,
+    "dir": 0,
+    "action": 2,
+    "reward": -0.01,
+    "violation": 0
+  },
+  {
+    "x": 5,
+    "y": 1,
+    "dir": 0,
+    "action": 2,
+    "reward": -0.01,
+    "violation": 0
+  },
+  {
+    "x": 6,
+    "y": 1,
+    "dir": 0,
+    "action": 2,
+    "reward": -0.01,
+    "violation": 0
+  },
+  {
+    "x": 7,
+    "y": 1,
+    "dir": 0,
+    "action": 2,
+    "reward": -0.01,
+    "violation": 0
+  },
+  {
+    "x": 8,
+    "y": 1,
+    "dir": 0,
+    "action": 2,
+    "reward": -0.01,
+    "violation": 0
+  },
+  {
+    "x": 9,
+    "y": 1,
+    "dir": 0,
+    "action": 2,
+    "reward": -0.01,
+    "violation": 0
+  },
+  {
+    "x": 9,
+    "y": 1,
+    "dir": 1,
+    "action": 1,
+    "reward": -0.01,
+    "violation": 0
+  },
+  {
+    "x": 9,
+    "y": 2,
+    "dir": 1,
+    "action": 2,
+    "reward": -0.01,
+    "violation": 0
+  },
+  {
+    "x": 9,
+    "y": 3,
+    "dir": 1,
+    "action": 2,
+    "reward": -0.01,
+    "violation": 0
+  },
+  {
+    "x": 9,
+    "y": 4,
+    "dir": 1,
+    "action": 2,
+    "reward": -0.01,
+    "violation": 0
+  },
+  {
+    "x": 9,
+    "y": 5,
+    "dir": 1,
+    "action": 2,
+    "reward": -0.01,
+    "violation": 0
+  },
+  {
+    "x": 9,
+    "y": 6,
+    "dir": 1,
+    "action": 2,
+    "reward": -0.01,
+    "violation": 1
+  },
+  {
+    "x": 9,
+    "y": 7,
+    "dir": 1,
+    "action": 2,
+    "reward": -0.01,
+    "violation": 0
+  },
+  {
+    "x": 9,
+    "y": 8,
+    "dir": 1,
+    "action": 2,
+    "reward": -0.01,
+    "violation": 0
+  },
+  {
+    "x": 9,
+    "y": 9,
+    "dir": 1,
+    "action": 2,
+    "reward": -0.01,
+    "violation": 0
+  },
+  {
+    "x": 9,
+    "y": 10,
+    "dir": 1,
+    "action": 2,
+    "reward": -0.01,
+    "violation": 0
+  },
+  {
+    "x": 9,
+    "y": 11,
+    "dir": 1,
+    "action": 2,
+    "reward": -0.01,
+    "violation": 0
+  },
+  {
+    "x": 9,
+    "y": 12,
+    "dir": 1,
+    "action": 2,
+    "reward": -0.01,
+    "violation": 0
+  },
+  {
+    "x": 9,
+    "y": 13,
+    "dir": 1,
+    "action": 2,
+    "reward": -0.01,
+    "violation": 0
+  },
+  {
+    "x": 9,
+    "y": 14,
+    "dir": 1,
+    "action": 2,
+    "reward": -0.01,
+    "violation": 0
+  },
+  {
+    "x": 9,
+    "y": 14,
+    "dir": 0,
+    "action": 0,
+    "reward": -0.01,
+    "violation": 0
+  },
+  {
+    "x": 10,
+    "y": 14,
+    "dir": 0,
+    "action": 2,
+    "reward": -0.01,
+    "violation": 0
+  },
+  {
+    "x": 11,
+    "y": 14,
+    "dir": 0,
+    "action": 2,
+    "reward": -0.01,
+    "violation": 0
+  },
+  {
+    "x": 12,
+    "y": 14,
+    "dir": 0,
+    "action": 2,
+    "reward": -0.01,
+    "violation": 0
+  },
+  {
+    "x": 13,
+    "y": 14,
+    "dir": 0,
+    "action": 2,
+    "reward": -0.01,
+    "violation": 0
+  },
+  {
+    "x": 14,
+    "y": 14,
+    "dir": 0,
+    "action": 2,
+    "reward": 0.965390625,
+    "violation": 0
+  }
+]
