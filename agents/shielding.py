@@ -46,28 +46,22 @@ def is_safe_action(env, action):
 MOVEMENT_ACTIONS = (0, 1, 2)
 
 def select_shielded_action(Q, state, epsilon, env):
+    safe_actions = [a for a in MOVEMENT_ACTIONS if is_safe_action(env, a)]
+    if not safe_actions:
+        safe_actions = [0, 1]
+
     if np.random.rand() < epsilon:
         candidate = np.random.choice(MOVEMENT_ACTIONS)
     else:
-        q_movement = np.array([Q[state][a] for a in MOVEMENT_ACTIONS])
-        best_idx = np.argmax(q_movement)
-        best_idxs = np.where(q_movement == q_movement[best_idx])[0]
-        candidate = MOVEMENT_ACTIONS[np.random.choice(best_idxs)]
+        q_vals = np.array([Q[state][a] for a in safe_actions])
+        best_idx = np.argmax(q_vals)
+        best_idxs = np.where(q_vals == q_vals[best_idx])[0]
+        candidate = safe_actions[np.random.choice(best_idxs)]
 
     if is_safe_action(env, candidate):
         return candidate, 0
 
-    safe_actions = [a for a in MOVEMENT_ACTIONS if is_safe_action(env, a)]
-
-    if safe_actions:
-        q_vals = np.array([Q[state][a] for a in safe_actions])
-        best_idx = np.argmax(q_vals)
-        best_idxs = np.where(q_vals == q_vals[best_idx])[0]
-        idx = np.random.choice(best_idxs)
-        return safe_actions[idx], 1
-
-    
-    return np.random.choice([0, 1]), 1
+    return np.random.choice(safe_actions), 1
 
 def train_shielded_q_learning(
     episodes=1000,
@@ -107,7 +101,10 @@ def train_shielded_q_learning(
 
             _, reward, terminated, truncated, info = env.step(action)
             next_state = get_state(env)
-            next_q_max = np.max([Q[next_state][a] for a in MOVEMENT_ACTIONS])
+            next_safe_actions = [a for a in MOVEMENT_ACTIONS if is_safe_action(env, a)]
+            if not next_safe_actions:
+                next_safe_actions = [0, 1]
+            next_q_max = np.max([Q[next_state][a] for a in next_safe_actions])
             Q[state][action] += alpha * (
                 reward + gamma * next_q_max - Q[state][action]
             )
@@ -166,4 +163,4 @@ def train_shielded_q_learning(
     return Q, rewards, violations, steps_list, blocked_list
 
 if __name__ == "__main__":
-    train_shielded_q_learning(episodes=5000, seed=42)
+    train_shielded_q_learning(episodes=500, seed=42)
