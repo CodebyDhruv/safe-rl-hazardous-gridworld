@@ -97,4 +97,4 @@ def train_sarsa(
 
 
 if __name__ == "__main__":
-    train_sarsa(episodes=6000, seed=42)
+    train_sarsa(episodes=500, seed=42)

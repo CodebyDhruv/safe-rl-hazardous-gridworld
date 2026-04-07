@@ -107,4 +107,4 @@ def train_q_learning(
 
 
 if __name__ == "__main__":
-    train_q_learning(episodes=5000, seed=42)
+    train_q_learning(episodes=500, seed=42)

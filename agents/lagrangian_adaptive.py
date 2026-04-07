@@ -116,9 +116,8 @@ def train_lagrangian_adaptive(
 
     print("\nSaved → results/lagrangian_adaptive_Q.pkl")
     print("Saved → results/l_adaptive_metrics.pkl")
-
-    return rewards, violations, lambda_history
+    return Q, rewards, violations, steps_list
 
 
 if __name__ == "__main__":
-    train_lagrangian_adaptive()
+    train_lagrangian_adaptive(episodes=800)

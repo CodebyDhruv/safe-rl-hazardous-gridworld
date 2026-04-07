@@ -99,8 +99,8 @@ def train_lagrangian_fixed(
 
     print("\nSaved → results/lagrangian_fixed_Q.pkl")
     print(" - Metrics → results/l_fixed_metrics.pkl")
-    return rewards, violations
+    return Q, rewards, violations, steps_list
 
 
 if __name__ == "__main__":
-    train_lagrangian_fixed(lambda_penalty=0.5)
+    train_lagrangian_fixed(episodes=500, lambda_penalty=0.5)
