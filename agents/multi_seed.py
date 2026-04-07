@@ -10,7 +10,7 @@ from agents.shielding import train_shielded_q_learning
 
 
 SEEDS = [0, 1, 2, 3, 4]   
-EPISODES = 5000
+EPISODES = 3000
 
 
 def run_experiment(train_fn, name):
