@@ -40,11 +40,7 @@ export default function App() {
     return (
         <div className="dashboard">
             <div className="hero-section">
-                <div className="status-badge">
-                    <span className="pulse-dot"></span>
-                    {simStatus === 'complete' ? "SYSTEM ONLINE" : "TEST ENVIRONMENT DETECTED"}
-                </div>
-                <h1 className="premium-title">Autonomous <span className="gradient-text">Safe RL</span> Evaluator</h1>
+                <h1 className="premium-title"><span className="gradient-text">Safe RL</span> Evaluator</h1>
                 <p className="subtitle">Mathematical Constraint Modeling & Policy Trajectory Projections</p>
 
                 {simStatus === 'complete' && evalData && evalData.best_safe && (
