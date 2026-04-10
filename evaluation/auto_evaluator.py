@@ -12,7 +12,7 @@ ALGORITHMS = [
 
 def analyze_and_recommend():
     print("\n" + "="*80)
-    print("🤖 AUTOMATED MODULAR EVALUATOR & RISK-MATURITY ANALYZER")
+    print("AUTOMATED MODULAR EVALUATOR & RISK-MATURITY ANALYZER")
     print("="*80 + "\n")
     
     results = {}
@@ -38,7 +38,7 @@ def analyze_and_recommend():
             "violations": mean_violation_converged
         }
     
-    print("📊 Evaluating Risk Maturity Profile & Performance Matrix (Last 50 Eps Average)")
+    print("Evaluating Risk Maturity Profile & Performance Matrix (Last 50 Eps Average)")
     print("-" * 80)
     print(f"{'Algorithm':<22} | {'Risk Maturity Profile':<25} | {'Reward':<8} | {'Violations'}")
     print("-" * 80)
@@ -91,7 +91,7 @@ def analyze_and_recommend():
 
     # Analytical Breakdown answering Project Constraints Requirements
     print("\n" + "="*80)
-    print("📝 ANALYTICAL CONCLUSION: EXPLANATION OF CONSTRAINT HANDLING")
+    print("ANALYTICAL CONCLUSION: EXPLANATION OF CONSTRAINT HANDLING")
     print("="*80)
     print("Based on the multi-seed matrix over independent trials, here is how each method handles the CMDP constraints best:\n")
     
@@ -107,7 +107,7 @@ def analyze_and_recommend():
     print("> Behavior: Overrides the neural intent completely via physical logic bounding. Acts with strictly zero-risk tolerance.")
     print("> Benefit: Best handling for rigid constraints. It mathematically guarantees absolutely zero violations. Ideal for preventing catastrophic irreversible hardware destruction, completely irrespective of the reward tradeoff.\n")
 
-    print("💡 FINAL PIPELINE INTEGRATION:")
+    print("FINAL PIPELINE INTEGRATION:")
     print("By embedding this Evaluator into the pipeline workflow, you avoid blindly sorting by maximum reward. The system natively selects the mature algorithm required for your specific physical tolerances.")
     print("="*80 + "\n")
 
